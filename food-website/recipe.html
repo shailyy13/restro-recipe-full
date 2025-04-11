@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./public/css/recipe.css" />
+    <link rel="stylesheet" href="./public/css/media.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="./images/logo-img.png" alt="logo" />
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./menu.html">menu</a></li>
+                <li><a href="./order.html">order</a></li>
+                <li><a class="active" href="./recipe.html">recipes</a></li>
+            </ul>
+        </nav>
+        <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+
+    <main>
+        <section id="recipe-section" class="recipe-section">
+            <h2>Our Delicious Recipes</h2>
+            <!-- Search input and button -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search recipes..." />
+                <button id="search-button">Search</button>
+            </div>
+            <div id="recipe-gallery" class="gallery-content"></div>
+        </section>
+
+        <!-- Submit Your Recipe Section -->
+        <section id="submit-recipe-section" class="submit-recipe-section">
+            <h2>Submit Your Recipe</h2>
+            <form id="recipe-form">
+                <label for="id">Recipe ID:</label>
+                <input type="text" id="id" name="id" required />
+
+                <label for="name">Recipe Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="cuisine">Cuisine:</label>
+                <input type="text" id="cuisine" name="cuisine" required />
+
+                <label for="meal">Meal (breakfast/lunch/dinner/dessert):</label>
+                <input type="text" id="meal" name="meal" required />
+
+                <label for="ingredient">Ingredients:</label>
+                <textarea id="ingredient" name="ingredient" rows="4" required></textarea>
+
+                <label for="method">Method:</label>
+                <textarea id="method" name="method" rows="6" required></textarea>
+
+                <label for="imgUrl">Image URL:</label>
+                <input type="text" id="imgUrl" name="imgUrl" required />
+
+                <button type="submit">Submit Recipe</button>
+            </form>
+            <p id="submission-message"></p>
+        </section>
+    </main>
+
+    <!-- ====markup footer element==== -->
+    <footer class="footer">
+        <div class="contact-info">
+            <h4>contact info</h4>
+            <p>
+                <i class="fas fa-location-dot"></i>
+                <span>abc, defgh.</span>
+            </p>
+            <p><i class="fas fa-envelope"></i> <span>shaily@gmaill.com</span></p>
+            <p><i class="fas fa-phone"></i> <span>992891</span></p>
+            <p><i class="fas fa-phone"></i> <span>902459</span></p>
+        </div>
+
+        <div class="location">
+            <h4>branch location</h4>
+            <ul>
+                <li><a href="#">place 1</a></li>
+                <li><a href="#">place 2</a></li>
+                <li><a href="#">place 3</a></li>
+                <li><a href="#">place 4</a></li>
+            </ul>
+        </div>
+
+        <div class="quick-links">
+            <h4>quick links</h4>
+            <ul>
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./menu.html">menu</a></li>
+                <li><a href="./order.html">order</a></li>
+                <li><a href="./recipe.html">recipe</a></li>
+            </ul>
+        </div>
+
+        <div class="follow-us">
+            <h4>follow us</h4>
+            <ul>
+                <li><a href="https://www.facebook.com" target="blank">facebook</a></li>
+                <li><a href="https://www.instagram.com" target="blank">instagram</a></li>
+                <li><a href="https://www.twitter.com" target="blank">twitter</a></li>
+                <li><a href="https://www.linkedin.com" target="blank">linkedin</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright 2024 || &copy all right reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ----linked main.js file---- -->
+    <script src="./public/js/main.js"></script>
+</body>
+</html>

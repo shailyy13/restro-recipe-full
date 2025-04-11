@@ -1,0 +1,375 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  width: 100%;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #f7ca3e;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; /* Space below the search input and button */
+  padding: 1rem;
+  border-radius: 12px; /* More rounded corners */
+  background: linear-gradient(145deg, #ffffff, #f1f1f1); /* Soft gradient background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  transition: background 0.3s, box-shadow 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-container:hover {
+  background: linear-gradient(145deg, #f1f1f1, #ffffff); /* Reverse gradient on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+#search-input {
+  width: 300px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 20px; /* Fully rounded corners */
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff; /* White background for input */
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+#search-input:focus {
+  border-color: #d9534f; /* Border color on focus */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on focus */
+  transform: scale(1.02); /* Slightly enlarge input on focus */
+  background-color: #fafafa; /* Slightly different background color on focus */
+}
+
+#search-button {
+  background-color: #d9534f; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px; /* Fully rounded corners */
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 0.5rem; /* Space between input and button */
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s, opacity 0.2s;
+}
+
+#search-button:hover {
+  background-color: #c9302c; /* Darker shade on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+  opacity: 0.9; /* Slight opacity change on hover */
+}
+
+#search-button:active {
+  background-color: #ac2925; /* Even darker shade when active */
+  transform: scale(1); /* Reset button size when active */
+  opacity: 1; /* Reset opacity when active */
+}
+
+/* Optional: Add focus styles for accessibility */
+#search-input:focus-visible {
+  outline: 3px solid #d9534f; /* Focus outline for better accessibility */
+}
+
+/* Recipe Section */
+.recipe-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.recipe-section h2 {
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2rem; /* Larger font size for heading */
+  font-weight: bold; /* Bold heading */
+  text-transform: uppercase; /* Uppercase heading */
+  letter-spacing: 1px; /* Slight letter spacing for emphasis */
+}
+
+/* Gallery Styles */
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.g-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: left;
+  padding: 1.5rem; /* Increased padding */
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.g-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+  transition: transform 0.3s;
+}
+
+.g-card h1 {
+  font-size: 1.8rem; /* Larger font size for recipe name */
+  margin: 0.5rem 0;
+  color: #d9534f; /* Bold red for recipe name */
+  font-weight: bold; /* Bold text */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Slight shadow for better readability */
+  line-height: 1.4; /* Increased line height */
+}
+
+.g-card h3 .highlight {
+  color: #0c17b3; /* Color for the first word */
+  font-weight: bold; /* Optional: Make the first word bold */
+}
+
+.g-card h3 {
+  font-size: 1.2rem; /* Larger font size for details */
+  margin: 0.5rem 0;
+  color: #555; /* Softer color for details */
+  font-weight: bold; /* Bolder text */
+  line-height: 1.6; /* Increased line height for readability */
+  letter-spacing: 0.5px; /* Slight letter spacing */
+}
+
+/* Hover Effects */
+.g-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.g-card:hover img {
+  transform: scale(1.1);
+}
+
+
+/* Submit Recipe Section */
+.submit-recipe-section {
+  padding: 2rem;
+  background: #ffffff; /* White background for a clean look */
+  border-radius: 12px; /* More rounded corners */
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  border: 1px solid #ddd; /* Border to define the section */
+}
+
+/* Form Heading */
+.submit-recipe-section h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 2rem; /* Larger font size for heading */
+  font-weight: bold; /* Bold heading */
+  text-align: center; /* Center align heading */
+}
+
+/* Form Labels */
+#recipe-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 1.1rem; /* Slightly larger font for labels */
+}
+
+/* Form Inputs and Textareas */
+#recipe-form input, #recipe-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* More rounded corners */
+  box-sizing: border-box;
+  font-size: 1rem; /* Consistent font size */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+#recipe-form input[type="text"] {
+  background-color: #f9f9f9; /* Light background for inputs */
+}
+
+#recipe-form textarea {
+  background-color: #f1f1f1; /* Slightly darker background for textarea */
+}
+
+/* Input and Textarea Focus Styles */
+#recipe-form input:focus, #recipe-form textarea:focus {
+  border-color: #d9534f; /* Highlight border color */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Highlight shadow */
+  outline: none; /* Remove default outline */
+}
+
+/* Submit Button */
+#recipe-form button {
+  padding: 12px 20px;
+  background: #d9534f; /* Bright blue background */
+  color: white;
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  font-size: 1rem; /* Consistent font size */
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+#recipe-form button:hover {
+  background: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+#recipe-form button:active {
+  background: #003d7a; /* Even darker blue when active */
+  transform: translateY(0); /* Reset transform on click */
+}
+
+/* Submission Message */
+#submission-message {
+  color: #28a745; /* Green color for success messages */
+  font-weight: bold;
+  text-align: center; /* Center align message */
+  margin-top: 1rem;
+  font-size: 1.2rem; /* Slightly larger font size */
+}
+
+
+/* Footer Styles */
+.footer {
+  padding: 3rem 1rem;
+  background-color: #333333;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer .contact-info {
+  grid-column: 1 / 4;
+  padding: 1rem;
+  min-height: 32rem;
+}
+
+.footer .contact-info p {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.footer .contact-info p i {
+  font-size: 1.6rem;
+  color: #f7ca3e;
+}
+
+.footer .contact-info p span {
+  padding-left: 1rem;
+  color: #ffffff;
+}
+
+.footer .contact-info p:first-of-type i {
+  width: 1.6rem;
+}
+
+.footer .contact-info p:first-of-type span {
+  text-transform: capitalize;
+}
+
+.footer .location {
+  grid-column: 4 / 7;
+  padding: 1rem;
+  min-height: 32rem;
+}
+
+.footer .location ul {
+  padding: 1rem;
+}
+
+.footer .location ul li {
+  padding: 1rem 0;
+}
+
+.footer .quick-links {
+  grid-column: 7 / 10;
+  padding: 1rem;
+  min-height: 32rem;
+}
+
+.footer .quick-links ul {
+  padding: 1rem;
+}
+
+.footer .quick-links ul li {
+  padding: 1rem 0;
+}
+
+.footer .follow-us {
+  grid-column: 10 / -1;
+  padding: 1rem;
+  min-height: 32rem;
+}
+
+.footer .follow-us ul {
+  padding: 1rem;
+}
+
+.footer .follow-us ul li {
+  padding: 1rem 0;
+}
+
+.footer .copyright {
+  grid-column: 1 / -1;
+  border-top: 0.1rem solid #f7ca3e;
+}
+
+.footer .copyright p {
+  font-size: 1.6rem;
+  color: #ffffff;
+  padding-top: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.footer .copyright p span {
+  color: #f7ca3e;
+  font-weight: 500;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .gallery-content {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .g-card {
+      width: 90%;
+  }
+}
